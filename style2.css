@@ -1,0 +1,270 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* cegah scroll horizontal */
+}
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    h1 { font-size: 24px; }
+    p { font-size: 14px; }
+    .btn { padding: 10px 15px; font-size: 14px; }
+}
+
+#index {
+    height: 100vh; /* penuh tinggi layar HP */
+    background-image: url('/transgo_rental/assets/images/bg.jpg'); /* path absolut */
+    background-size: cover; /* gambar menutupi penuh */
+    background-position: center; /* tengah gambar */
+    background-repeat: no-repeat;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;          /* ukuran proporsional desktop */
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.login-card input,
+.login-card button {
+    width: 100%;
+}
+
+.btn-primary {
+    background: #FF7A00;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #ff8f3c;
+}
+
+.login-card p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Responsif HP */
+@media (max-width: 500px) {
+    .login-card {
+        padding: 25px 15px;
+        margin: 20px;
+    }
+}
+/* =========================================================
+   VARIABLE WARNA
+   ========================================================= */
+html, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+* {
+    box-sizing: border-box !important;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  overflow-x: hidden; /* Mencegah tampilan mengecil */
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+.navbar {
+  background-color: var(--primary) !important;
+}
+
+.nav-link,
+.navbar-brand {
+  color: white !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--accent) !important;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+#beranda {
+  background-image: url('assets/images/BG beranda.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#beranda::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+#beranda .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================================
+   TENTANG KAMI
+   ========================================================= */
+#tentang {
+  background: #f5f7fa;
+  padding: 80px 0;
+  border-radius: 0 0 25px 25px;
+}
+
+#tentang h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #06336f;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+#tentang h2::after {
+  content: "";
+  width: 70px;
+  height: 5px;
+  background: #f38f47;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  border-radius: 5px;
+}
+
+#tentang img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+/* =========================================================
+   GLOBAL IMG FIX (supaya form/login tidak rusak)
+   ========================================================= */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* =========================================================
+   KARTU KOLEKSI
+   ========================================================= */
+.card1 {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+#koleksi .card1 {
+  width: 100%;
+  max-width: 260px;  /* Agar tidak kecil di HP */
+  height: 300px;
+  margin: 0 auto;
+}
+
+#koleksi .card1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   GRID KOLEKSI RESPONSIVE
+   ========================================================= */
+.grid-koleksi {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .grid-koleksi {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-koleksi {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-koleksi {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================================
+   FIX FORM & CARD (ANTI MENGECIL)
+   ========================================================= */
+.container,
+.container-fluid {
+  max-width: 100% !important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card,
+.card1,
+form {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+.btn-primary {
+  background: var(--accent) !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #ff8f3c !important;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+  font-size: 14px;
+}
+
