@@ -16,3 +16,33 @@ link website https://transgorental.infinityfreeapp.com/?i=1
 
 ---
 *Dibuat untuk mendukung digitalisasi UMKM di bidang transportasi.*
+
+# Dokumentasi Tampilan Web UMKM
+
+### 1. Halaman Beranda
+![Beranda](HasilWebsitenya/beranda.png)
+
+### 2. Halaman Dashboard Admin
+![Admin](HasilWebsitenya/admin.png)
+
+### 3. Halaman Penyewa
+![Penyewa](HasilWebsitenya/penyewa.png)
+
+### 4. Halaman Login
+![Login](HasilWebsitenya/login.png)
+
+### 5. Halaman Register
+![Register](HasilWebsitenya/register.png)
+
+### 6. Halaman riwayat penyewa
+![Riwayat](HasilWebsitenya/riwayat.png)
+
+### 7. Halaman kelola pesanan
+![Kelola pesanan](HasilWebsitenya/kelolaPesanan.png)
+
+### 8. Halaman Tambah mobil
+![Tambah mobil](HasilWebsitenya/tambahMobil.png)
+
+
+
+
